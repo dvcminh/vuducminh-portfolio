@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa6";
-import ducminh_dalat from "../../assets/images/ducminh_dalat.jpg";
 import ducminh_phongvan from "../../assets/images/ducminh_phongvan.jpg";
 import code from "../../assets/images/code.jpg";
 import football from "../../assets/images/football.jpg";

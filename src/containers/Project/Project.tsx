@@ -3,15 +3,7 @@ import ProjectCard from "./ProjectCard";
 import cdm from "../../assets/images/cdm.png";
 import stylash from "../../assets/images/stylash.png";
 import portfolio from "../../assets/images/portfolio.png";
-interface ProjectCardType {
-  img: string;
-  title: string;
-  description: string;
-  github: string;
-}
-interface ProjectCardProps {
-  prop: ProjectCardType[];
-}
+
 const Project = () => {
   const containerVariants = {
     hidden: { opacity: 0 },
