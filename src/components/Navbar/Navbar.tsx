@@ -74,28 +74,27 @@ const Navbar = () => {
             </defs>
           </svg>
 
-          <span className="ml-3 text-xl mt-2 text-white">Daniel Vu</span>
+          <span className="ml-3 text-2xl mt-2 text-transparent bg-clip-text bg-gradient-to-r from-[#7A87FB] to-[#FFD49C]">Daniel Vu</span>
         </a>
         <div>
           
         </div>
         <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center text-white rounded-full border-s-[#8994FF] border-t-[#A1A4F9] border-r-[#A49FDD] border-b-[#FFD49C] border-2 p-2 bg-[#1C1C1C]">
           <Link
-            to={""}
-            className="p-2 mr-5 bg-[#292929] rounded-full"
+            to={"/"}
+            className="p-2 mr-5 bg-[#292929] rounded-full font-normal"
           >
             {" "}
-            <FaHome className="items-center"/>
+            <FaHome className="items-center hover:text-gray-300 hover:border-b  border-b-[#A49FDD] box-border"/>
           </Link>
-          <a className="mr-5 hover:text-gray-900">First Link</a>
-          <a className="mr-5 hover:text-gray-900">Second Link</a>
-          <a className="mr-5 hover:text-gray-900">Third Link</a>
-          <a className="hover:text-gray-900">Fourth Link</a>
+          <Link to={"/about"} className="mr-5 hover:text-gray-300 hover:border-b font-normal border-b-[#A49FDD]">About</Link>
+          <Link to={"/project"} className="mr-5 hover:text-gray-300 hover:border-b font-normal border-b-[#A49FDD]">Project</Link>
+          <Link to={"/resume"} className="mr-5 hover:text-gray-300 hover:border-b font-normal border-b-[#A49FDD]">Resume</Link>
+          <Link to={"/contact"} className="hover:text-gray-300 hover:border-b font-normal border-b-[#A49FDD]">Contact</Link>
         </nav>
-        <button className="inline-flex items-center bg-gradient-to-r from-[#7A87FB] to-[#FFD49C] border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base md:mt-0 text-black font-normal">
-          Contact
-          
-        </button>
+        <Link to={"/contact"} className="inline-flex items-center bg-gradient-to-r from-[#7A87FB] to-[#FFD49C] border-0 py-2 px-3 focus:outline-none hover:bg-gray-200 rounded-full text-base md:mt-0 text-black font-medium">
+          Hire Me
+        </Link>
       </div>
     </header>
   );
