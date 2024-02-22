@@ -12,9 +12,9 @@ interface ProjectCardProps {
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ prop }) => {
-  return prop.map((data: any) => {
+  return prop.map((data: ProjectCardType) => {
     return (
-      <div className="xl:w-1/4 md:w-1/2 p-4 ">
+      <div className="xl:w-1/4 md:w-1/2 p-4 font-light">
         <div className="bg-[#151515] p-6 rounded-lg">
           <img
             className="h-40 rounded w-full object-cover object-center mb-6"
@@ -28,10 +28,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ prop }) => {
             {data.description}
           </p>
           <div className="flex justify-center">
-            <button className="inline-flex items-center bg-gradient-to-r from-[#7A87FB] to-[#FFD49C] border-0 py-2 px-3 focus:outline-none rounded-full text-base md:mt-0 text-black font-medium">
-              <FaGithub className="mr-2" />
-              Github
-            </button>
+            <a href={data.github}>
+              <button className="inline-flex items-center bg-gradient-to-r from-[#7A87FB] to-[#FFD49C] border-0 py-2 px-3 focus:outline-none rounded-full text-base md:mt-0 text-black font-medium">
+                <FaGithub className="mr-2" />
+                Github
+              </button>
+            </a>
           </div>
         </div>
       </div>

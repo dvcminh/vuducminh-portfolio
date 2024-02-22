@@ -117,8 +117,7 @@ const AboutSection: React.FC = () => {
                   <br />
                   <br />
                   My goal is to become a senior developer and work on
-                  challenging projects. Welcome to my portfolio, where you can
-                  find out more about me and my work.
+                  challenging projects that will help me grow as a developer. Please feel free to reach out to me if you have any questions or would like to work with me.
                 </p>
               </div>
             </div>

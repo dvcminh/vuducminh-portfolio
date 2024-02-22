@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
-
+import cdm from "../../assets/images/cdm.png";
+import stylash from "../../assets/images/stylash.png";
+import portfolio from "../../assets/images/portfolio.png";
 interface ProjectCardType {
   img: string;
   title: string;
@@ -28,24 +30,24 @@ const Project = () => {
 
   const project = [
     {
-      img: "https://dummyimage.com/720x400",
-      title: "SUBTITLE",
+      img: cdm,
+      title: "CDM",
       description:
-        "Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.",
-      github: "https://github.com",
+        "CDM is a car dealership management system that provide a platform for car dealers and staffs to manage their inventory, sales, and customer data. It also provides a platform for customers to view the available cars and make a purchase.",
+      github: "https://github.com/dvcminh/CDM",
     },
     {
-      img: "https://dummyimage.com/720x400",
-      title: "SUBTITLE",
+      img: stylash,
+      title: "Stylash",
       description:
-        "Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.",
-      github: "https://github.com",
+        "Stylash is a e-commerce website that sells beauty products. It provides a platform for customers to view and purchase beauty products. Besides, it also include a platform for the admin to manage the inventory and sales data",
+      github: "https://github.com/dvcminh/StyLash-Frontend",
     },{
-      img: "https://dummyimage.com/720x400",
-      title: "SUBTITLE",
+      img: portfolio,
+      title: "Portfolio",
       description:
-        "Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.",
-      github: "https://github.com",
+        "This is my portfolio website. It provides a platform for me to showcase my projects and skills. It also provides a platform for the visitors to view my projects and contact me.",
+      github: "https://github.com/dvcminh/minhdeptrai_portfolio",
     }
   ];
 
